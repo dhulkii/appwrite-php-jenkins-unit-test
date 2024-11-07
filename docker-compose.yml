@@ -45,7 +45,7 @@ services:
   appwrite:
     container_name: appwrite
     <<: *x-logging
-    image: appwrite-dev:${env.BUILD_ID}
+    image: appwrite-dev:${BUILD_ID}
     build:
       context: .
       args:
